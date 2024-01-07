@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+}
+nav{
+    padding: 20px;
+}
+nav ul i{
+    color:white;
+    visibility: hidden;
+}
+nav li{
+    display: inline;
+    padding: 10px;
+    padding-bottom: 22px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+nav li:hover{
+    background-color: #434343;
+}
+nav li a{
+    color: white;
+    list-style-type: none;
+    padding: 25px;
+    text-decoration: none;
+}
+nav li a:active{
+    color: red;
+}
+.logo{
+    color: white;
+    float: left;
+    font-size: larger;
+}
+span{
+    color: hotpink;
+}
+.Subscribe{
+    float: right;
+    background-color: red;
+    border-radius: 12px;
+    margin: auto 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 1px 1px 10px red;
+            box-shadow: 1px 1px 10px red;
+}
+.Subscribe:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* Home  */
+div .box1{
+    position: relative;
+}
+div .box2{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    color: white;
+}
+div .box2 h1{
+    font-size: xx-large;
+}
+div .box2 input{
+    padding-left: 5px;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: auto 100px;
+    border:2px solid hotpink;
+}
+div .talk button{
+    color: white;
+    position: absolute;
+    background-color: rgb(199, 17, 108);
+    -webkit-box-shadow: 5px 5px 40px hotpink;
+            box-shadow: 5px 5px 40px hotpink;
+    right: 10%;
+    border-radius: 12px;
+    margin-top: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
+div .talk button:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* About */
+
+#about{
+    background-color: #434343;
+    min-height: 100vh;
+}
+.container2{
+    display: flexbox;
+    padding-top: 10%;
+}
+.about-img img{
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-left: 10%;
+}
+.about-content{
+    text-align: center;
+    padding: 10%;
+    background-color: rgba(180, 152, 152, 0.432);
+}
+.about-content button{
+    background-color: hotpink;
+    border-radius: 12px;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.about-content button:hover{
+    background-color: rgb(245, 25, 135);
+}
+
+/* Services */
+.services{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 5%;
+}
+#services{
+    background-color: #eecd90;
+    min-height: 100vh;
+}
+.container3{
+    display: flexbox;
+    margin: 10%;
+    height: 300px;
+}
+.service{
+    margin-top: 0%;
+    float: left;
+    width: 200px;
+    margin: 5%;
+    background-color: white;
+    padding:5% 2%;
+    border-radius: 15px;
+}
+
+
+@media(max-width:856px) and (min-width:200px){
+    nav ul i{
+        visibility: visible;
+        color: white;
+        position: absolute;
+        bottom: 8px;
+        left: 25px;
+    }
+    nav ul i:hover{
+        background-color: white;
+        color: black;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        padding:5px;
+        border-radius: 25px;
+    }
+    nav .logo{
+        position: absolute;
+    }
+    nav ul li{
+        visibility: hidden;
+    }
+    nav ul .Subscribe{
+        margin-top: -25px;
+
+    }
+    /*About*/
+    .about-img img{
+        float: none;
+        margin-left: 50px;
+    }
+    /*Services*/
+    #services{
+        min-height: 130vh;
+    }
+    .container3 .service{
+        margin-left: 60px;
+        text-align: center;
+    }
+}
